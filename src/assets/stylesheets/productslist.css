@@ -1,0 +1,11 @@
+.productslist{
+    margin: 20px;
+    height: auto;
+    max-height: 100vw;
+    position: absolute;
+    width: 85vw;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

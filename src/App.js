@@ -1,15 +1,20 @@
-import logo from './logo.svg';
-import Header from './components/header';
-import Productslist from './components/Productslist';
 import './App.css';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useContext, useState } from "react";
+import { AuthRouter } from "./routers/AuthRouter";
+import { UnauthRouter } from "./routers/UnauthRouter";
+import AuthContext from "./context/AuthContext";
+
 
 
 function App() {
+
+  const {auth} = useContext(AuthContext);
+
   return (
     <div className="App">
-      <Header/>
-      <Productslist/>
+      <header className="App-header">
+        {auth? <AuthRouter/> : <UnauthRouter/>}
+      </header>
     </div>
   );
 }

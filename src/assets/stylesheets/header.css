@@ -1,0 +1,9 @@
+.navbar{
+    height: auto;
+    width: 85vw;
+    position: sticky;
+    left: 15vw;
+}
+.navbar-title{
+    font-size: 30px;
+}

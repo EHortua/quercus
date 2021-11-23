@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 import Card from 'react-bootstrap/Card';
-import '../assets/stylesheets/product.css';
-import Toronja from '../assets/toronja.png'
+import '../../assets/stylesheets/product.css';
+import Toronja from '../../assets/toronja.png'
 
-export default function Product({nombre, precio, descripcion}) {
-
+export const Product = ({nombre, precio, descripcion}) => {
     return (
-      <Card style={{ width: "18rem" }} className="product">
+        <Card style={{ width: "18rem" }} className="product">
         <Card.Img variant="top" src={Toronja} />
         <Card.Body>
           <Card.Title>{nombre}</Card.Title>
@@ -16,5 +15,5 @@ export default function Product({nombre, precio, descripcion}) {
           </Card.Text>
         </Card.Body>
       </Card>
-    );
+    )
 }
